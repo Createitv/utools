@@ -1,0 +1,18 @@
+{
+  "name": "@utools/universal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@utools/decorator": "workspace:*",
+    "dayjs": "^1.11.7"
+  },
+  "type": "module"
+}
