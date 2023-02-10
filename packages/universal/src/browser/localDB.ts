@@ -1,3 +1,5 @@
+import { isJSONStr } from '@/lang/match'
+
 /**
  * 封装 localStorage
  * 增加对 JSON 对象的转换
@@ -12,8 +14,8 @@ const localDB = {
   set(key: string | number, value: any) {
     if (!value) delete window.localStorage[key]
     else {
-      const val = typeof value === 'object' ? JSON.stringify(value) : value
-      window.localStorage[key] = val
+      window.localStorage[key] =
+        typeof value === 'object' ? JSON.stringify(value) : value
     }
   },
 
@@ -24,7 +26,7 @@ const localDB = {
    */
   get(key: string | number) {
     const str = window.localStorage[key] || ''
-    return Utils.isJSONStr(str) ? JSON.parse(str) : str
+    return isJSONStr(str) ? JSON.parse(str) : str
   },
 
   /**
@@ -44,4 +46,4 @@ const localDB = {
   },
 }
 
-export default localDB
+export { localDB }

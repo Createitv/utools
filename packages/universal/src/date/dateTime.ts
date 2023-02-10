@@ -88,4 +88,4 @@ const dateTime = {
   },
 }
 
-export default dateTime
+export { dateTime }

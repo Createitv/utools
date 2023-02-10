@@ -180,4 +180,4 @@ class LocalIndexedDB {
   }
 }
 
-export default LocalIndexedDB
+export { LocalIndexedDB }
