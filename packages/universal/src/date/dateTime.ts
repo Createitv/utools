@@ -1,12 +1,7 @@
-/** :
- * @description: 时间格式化
- * @author: Created by 景明 on 2021-08-26 15:57:25
- */
-
 import dayjs from 'dayjs'
 
 /**
- * 时间处理
+ * @description: 时间格式化
  */
 const dateTime = {
   /**
@@ -88,4 +83,15 @@ const dateTime = {
   },
 }
 
-export { dateTime }
+/**
+ * @description 是否为闰年
+ * @param {Number} year
+ * @returns {Boolean}
+ */
+
+function isLeapYear(year: number): boolean {
+  return 0 === year % 4 && (year % 100 !== 0 || year % 400 === 0)
+}
+
+export { dateTime, isLeapYear }
+export default dateTime

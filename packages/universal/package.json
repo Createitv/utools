@@ -1,18 +1,26 @@
 {
   "name": "@utools/universal",
-  "version": "1.0.0",
+  "version": "0.0.55",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/universal.umd.js",
+  "module": "dist/universal.umd.js",
+  "unpkg": "dist/universal.umd.min.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "ts-node index.ts",
-    "test": "jest"
+    "test": "jest",
+    "build:universal": "rollup -c",
+    "build:universal:watch": "rollup -w -c",
+    "npm:published": "npm publish --access public",
+    "npm:pack-verfy": "npm pack --dry-run"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["tools", "前端工具函数","Lodash Like"],
+  "author": "独立开发者彷丶徨丶",
+  "license": "MIT License",
   "dependencies": {
-    "@utools/decorator": "workspace:*",
     "dayjs": "^1.11.7"
   },
-  "type": "module"
+  "type": "module",
+  "files": ["dist","LICENSE","package.json","index.d.ts"],
+  "sideEffects": false
 }

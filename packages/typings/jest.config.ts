@@ -94,7 +94,6 @@ const jestConfig: JestConfigWithTsJest = {
   // names that allow to stub out resources with a single module
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '^src/(.*)$': '<rootDir>/src/$1',
     '^lib/(.*)$': '<rootDir>/common/$1',
   },
 

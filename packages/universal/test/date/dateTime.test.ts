@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import DateTime from '@/date/dateTime'
+import DateTime from 'src/date/dateTime'
 
 const {
   formatDate,

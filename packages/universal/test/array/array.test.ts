@@ -1,18 +1,10 @@
 import { describe, expect } from '@jest/globals'
-import {
-  chunk,
-  compact,
-  drop,
-  dropRight,
-  fill,
-  first,
-  head,
-  last,
-  tail,
-  fromPairs,
-  join,
-  nth,
-} from '@/array/array'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { chunk, compact, drop, dropRight, fill, first } from '@/array/array'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { head, last, tail, nth, fromPairs, join } from '@/array/array'
 
 describe('test array tools function', () => {
   it('test chunk function', () => {

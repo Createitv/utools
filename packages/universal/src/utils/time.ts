@@ -13,5 +13,4 @@ function times<R>(
   return Array.from(new Array(n), (_deprecated, index) => iteratee(index))
 }
 
-console.log(times(3, String))
 export { times }

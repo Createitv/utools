@@ -1,0 +1,6 @@
+coverage
+node_modules
+package.json
+test
+jest.config.ts
+rollup.config.js
