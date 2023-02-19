@@ -1,8 +1,4 @@
-export * from './array/array'
-export * from './browser/index'
-export * from './computer/bytes'
-export * from './date/dateTime'
-export { default } from './date/dateTime'
-export * from './math/math'
-export * from './utils/index'
-export * from './regexp/regexp'
+import * as universal from './external'
+export * from './external'
+export { universal as u }
+export default universal

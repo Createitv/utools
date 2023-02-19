@@ -1,7 +1,10 @@
 {
   "name": "@utools/universal",
-  "version": "0.0.55",
-  "description": "",
+  "version": "0.0.57",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Createitv/utools"
+  },
   "main": "dist/universal.umd.js",
   "module": "dist/universal.umd.js",
   "unpkg": "dist/universal.umd.min.js",
@@ -10,8 +13,9 @@
     "dev": "ts-node index.ts",
     "test": "jest",
     "build:universal": "rollup -c",
-    "build:universal:watch": "rollup -w -c",
-    "npm:published": "npm publish --access public",
+    "watch:universal": "rollup -w -c",
+    "prettier:src": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,scss,md}\" index.d.ts",
+    "npm:published": "npm run prettier:src && npm publish --access public",
     "npm:pack-verfy": "npm pack --dry-run",
     "doc:build": "typedoc --out ./docs --excludePrivate --excludeExternals --exclude '**/*.spec.ts' --exclude '**/*.test.ts' --exclude '**/*.d.ts' --exclude '**/node_modules/**' --exclude '**/dist/**' --exclude '**/docs/**' --exclude '**/covera src/index.ts"
   },
@@ -25,9 +29,9 @@
   "email": "createitv@bebtjj.wecom.work",
   "license": "MIT License",
   "dependencies": {
+    "@utools/universal": "workspace:0.0.57",
     "dayjs": "^1.11.7"
   },
-  "type": "module",
   "files": [
     "dist",
     "LICENSE",

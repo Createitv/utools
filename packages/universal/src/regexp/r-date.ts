@@ -1,13 +1,4 @@
 /**
- * @description 判断是否为日期
- * @param value
- * @returns {boolean}
- */
-function isValidDate(value: any): boolean {
-  return !isNaN(Date.parse(value))
-}
-
-/**
  * @description 判断是否为日期时间
  * @param value
  * @returns {boolean}
@@ -18,4 +9,4 @@ function isValidDataTime(value: any): boolean {
   )
 }
 
-export { isValidDataTime, isValidDate }
+export { isValidDataTime }

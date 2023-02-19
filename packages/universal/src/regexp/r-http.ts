@@ -15,7 +15,9 @@ function isUrl(value: string): boolean {
  * @returns {boolean}
  */
 function isIpv4(value: string): boolean {
-  return /^((25[0-5]|2[0-4]\d|[01]?\d\d?)($|(?!\.$)\.)){4}$/.test(value)
+  return /^(((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))$/.test(
+    value,
+  )
 }
 
 /**
@@ -24,7 +26,7 @@ function isIpv4(value: string): boolean {
  * @returns {boolean}
  */
 function isIpv6(value: string): boolean {
-  return /^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$/.test(value)
+  return /^([\da-fA-F]{1,4}:){7}[\da-fA-F]{1,4}$/.test(value)
 }
 
 export { isUrl, isIpv4, isIpv6 }

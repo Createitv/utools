@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'utools工具库',
+  base: '/docs/',
   lang: 'zh-CN',
   description: '前端开发者utools工具库',
   head: [
@@ -37,10 +38,13 @@ export default defineConfig({
           items: [
             { text: '什么是 utools', link: '/guide/what-is-utools' },
             { text: '快速开始', link: '/guide/getting-started' },
-            { text: '配置', link: '/guide/configuration' },
-            { text: '发布', link: '/guide/deploying' },
           ],
           collapsed: true,
+        },
+        {
+          text: '实践',
+          items: [{ text: '常用正则匹配', link: '/guide/regex' }],
+          collapsed: false,
         },
       ],
     },
@@ -51,8 +55,8 @@ export default defineConfig({
     docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdatedText: '最近更新时间',
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present 独立开发者彷丶徨丶',
+      message: 'WeChat: navalism1',
+      copyright: 'Copyright © 2022-present 独立开发者彷丶徨丶',
     },
   },
   lastUpdated: true,

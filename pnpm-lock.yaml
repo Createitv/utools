@@ -93,9 +93,11 @@ importers:
 
   packages/universal:
     specifiers:
+      '@utools/universal': workspace:0.0.56
       dayjs: ^1.11.7
       typedoc: ^0.23.25
     dependencies:
+      '@utools/universal': 'link:'
       dayjs: 1.11.7
     devDependencies:
       typedoc: 0.23.25_typescript@4.9.5
