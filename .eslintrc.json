@@ -30,5 +30,6 @@
     "no-useless-escape": 0,
     "@typescript-eslint/no-explicit-any": 0
     // 注释后面必须写两个空格
-  }
+  },
+  "ignorePatterns": ["!docs/.vitepress"]
 }

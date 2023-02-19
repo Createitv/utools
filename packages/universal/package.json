@@ -12,15 +12,30 @@
     "build:universal": "rollup -c",
     "build:universal:watch": "rollup -w -c",
     "npm:published": "npm publish --access public",
-    "npm:pack-verfy": "npm pack --dry-run"
+    "npm:pack-verfy": "npm pack --dry-run",
+    "doc:build": "typedoc --out ./docs --excludePrivate --excludeExternals --exclude '**/*.spec.ts' --exclude '**/*.test.ts' --exclude '**/*.d.ts' --exclude '**/node_modules/**' --exclude '**/dist/**' --exclude '**/docs/**' --exclude '**/covera src/index.ts"
   },
-  "keywords": ["tools", "前端工具函数","Lodash Like"],
+  "keywords": [
+    "tools",
+    "前端工具函数",
+    "Lodash Like"
+  ],
   "author": "独立开发者彷丶徨丶",
+  "WeChat": "navalism1",
+  "email": "createitv@bebtjj.wecom.work",
   "license": "MIT License",
   "dependencies": {
     "dayjs": "^1.11.7"
   },
   "type": "module",
-  "files": ["dist","LICENSE","package.json","index.d.ts"],
-  "sideEffects": false
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "index.d.ts"
+  ],
+  "sideEffects": false,
+  "devDependencies": {
+    "typedoc": "^0.23.25"
+  }
 }

@@ -3,3 +3,4 @@ node_modules
 
 # tests
 packages/*/coverage
+docs/.vitepress

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES5",             // 目标语言的版本
+    "module": "commonjs",        // 指定生成代码的模板标准
+    "noImplicitAny": true,       // 不允许隐式的 any 类型
+    "removeComments": false,      // 删除注释
+    "preserveConstEnums": true,  // 保留 const 和 enum 声明
+    "sourceMap": true            // 生成目标文件的sourceMap文件
+  },
+}
+

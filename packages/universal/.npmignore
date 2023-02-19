@@ -4,3 +4,4 @@ package.json
 test
 jest.config.ts
 rollup.config.js
+docs

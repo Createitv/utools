@@ -87,16 +87,6 @@ export function generateAKey() {
 }
 
 /**
- * @description 判断手机号
- * @param {string} tel
- * @returns {boolean}
- */
-export function isPhoneNumber(tel: string) {
-  const reg = /^0?1[3|4|5|6|7|8][0-9]\d{8}$/
-  return reg.test(tel)
-}
-
-/**
  * 随机生成一串6位同时包含数字、大小写字母的字符串
  * @param len number
  */
