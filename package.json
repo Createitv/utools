@@ -15,7 +15,7 @@
     "eslint:fix": "eslint packages --ext .ts --max-warnings=0 --fix",
     "prettier:fix": "prettier --write \"packages/**/*.ts\"",
     "commit": "pnpm run eslint:fix && git add . && cz",
-    "build": "npm run eslint && npm run prettier && rm -rf lib && tsc --build",
+    "build": "npm run eslint:fix && npm run prettier && rm -rf lib && tsc --build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"

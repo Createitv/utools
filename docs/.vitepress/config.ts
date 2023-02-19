@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'utools工具库',
-  base: '/utools/',
   lang: 'zh-CN',
   description: '前端开发者utools工具库',
   head: [

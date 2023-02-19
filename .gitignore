@@ -132,3 +132,5 @@ dist
 .pnp.*
 
 /packages/universal/docs/
+
+.vercel
