@@ -1,6 +1,11 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import { add, ceil, subtract, divide, multiply, floor } from 'src/math/math'
+import {
+  add,
+  ceil,
+  subtract,
+  divide,
+  multiply,
+  floor,
+} from '../../src/math/math'
 import { expect } from '@jest/globals'
 
 describe('add', () => {

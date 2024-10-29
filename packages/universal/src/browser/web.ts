@@ -120,7 +120,7 @@ export function getRandomStr(len: number): string {
  * @desc 判断浏览器是否支持webP格式图片
  * @return {Boolean}
  */
-export function isSupportWebP() {
+export function isSupportWebP(): boolean {
   return (
     !![].map &&
     document

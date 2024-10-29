@@ -1,11 +1,10 @@
 /**
  * @description 加法运算
- * @param {number} augend 加数
- * @param {number} addend 被加数
- * @returns {number}
+ * @param numbers
+ * @returns number
  */
-function add(augend: number, addend: number): number {
-  return augend + addend
+function add(...numbers: number[]): number {
+  return numbers.reduce((acc, curr) => acc + curr, 0)
 }
 
 function ceil(n: number, precision = 0): number {
@@ -32,7 +31,7 @@ function multiply(multiplier: number, multiplicand: number): number {
  * @param {number} precision
  * @returns {number}
  */
-function round(n: number, precision = 0): number {
+function round(n: number, precision: number = 0): number {
   const digit = Math.pow(10, precision)
   return Math.round(n * digit) / digit
 }
